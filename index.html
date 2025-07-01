@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>StudioAlphaSite</title>
+  <title>I-T-OのWebサイト</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
@@ -14,52 +14,69 @@
       background-color: #ffffff;
       color: #222;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       min-height: 100vh;
+      text-align: center;
+    }
+
+    .logo {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
     }
 
     .container {
       max-width: 800px;
-      padding: 2em;
-      text-align: left;
+      padding: 1em;
     }
 
     p {
-      font-size: 1rem; /* iPhone用（〜767px） */
+      font-size: 1rem;
       line-height: 1.8;
+      margin: 0.5em 0;
     }
 
+    a {
+      color: #0072b5;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 画面幅に応じたフォントサイズ調整 */
     @media (min-width: 768px) {
-      p {
-        font-size: 1.5rem; /* iPad用（768〜1279px） */
-      }
+      p { font-size: 1.4rem; }
     }
 
     @media (min-width: 1280px) {
-      p {
-        font-size: 2rem; /* iMac用（1280px以上） */
-      }
+      p { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
-  <!-- ロゴ画像 -->
+
+  <!-- ロゴ画像：上部中央 -->
   <div class="logo">
     <img src="itologo.png" alt="I.T.Oロゴ">
   </div>
-  <!-- 本文 -->
 
+  <!-- テキストコンテンツ -->
   <div class="container">
-    <p>
-      動画制作・写真撮影・アプリ開発等<br>
-      何でもやります、お気軽るにご相談ください。<br>
-      Studio Alpha (旧くすりのアルファ薬局)<br>
-      愛知県知多郡東浦町森岡下今池35-9<br>
-      伊東 亮太 / Ito Ryota<br>
-      Eメール <a href="mailto:yakkyoku@mac.com?subject=お問い合わせ">yakkyoku@mac.com</a>
-
-    </p>
+    <p>動画制作・写真撮影・アプリ開発等</p>
+    <p>何でもやります、お気軽にご相談ください。</p>
+    <p>Studio Alpha（旧くすりのアルファ薬局）</p>
+    <p>愛知県知多郡東浦町森岡下今池35-9</p>
+    <p>伊東 亮太 / Ito Ryota</p>
+    <p>Eメール <a href="mailto:yakkyoku@mac.com?subject=お問い合わせ">yakkyoku@mac.com</a></p>
   </div>
+
 </body>
 </html>
