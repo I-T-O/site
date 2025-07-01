@@ -4,38 +4,19 @@
   <meta charset="UTF-8">
   <title>I-T-OのWebサイト</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Sawarabi Mincho', serif;
-      color: #ffffff;
+      background-color: #ffffff;
+      color: #222;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      overflow: hidden;
-
-      /* 水中風アニメーション背景 */
-      background: radial-gradient(circle at 20% 30%, #00c2d1, transparent 40%),
-                  radial-gradient(circle at 80% 70%, #0072b5, transparent 50%),
-                  radial-gradient(circle at 50% 50%, #0b1e3c, #0072b5, #00c2d1);
-      background-size: 400% 400%;
-      animation: waterFlow 15s ease-in-out infinite;
-      background-blend-mode: screen;
-    }
-
-    @keyframes waterFlow {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
     }
 
     .container {
@@ -45,19 +26,19 @@
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1rem; /* iPhone用（〜767px） */
       line-height: 1.8;
     }
 
     @media (min-width: 768px) {
       p {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* iPad用（768〜1279px） */
       }
     }
 
     @media (min-width: 1280px) {
       p {
-        font-size: 2rem;
+        font-size: 2rem; /* iMac用（1280px以上） */
       }
     }
   </style>
@@ -68,7 +49,7 @@
       Studio Alpha (旧くすりのアルファ薬局)<br>
       愛知県知多郡東浦町森岡下今池35-9<br>
       伊東 亮太 / Ito Ryota<br>
-      基本的に何でもやります、気軽るにご相談ください。
+      何でもやります、お気軽るにご相談ください。
     </p>
   </div>
 </body>
