@@ -11,12 +11,18 @@
       padding: 0;
       font-family: 'Sawarabi Mincho', serif;
       background: linear-gradient(-45deg,
-        #d0f0ff, #a0d8ef, #7ab8f5, #6097d8,
-        #7ab8f5, #a0d8ef, #d0f0ff
+        #f0f8ff,  /* 白に近い淡水色 (アリスブルー) */
+        #d6eaf8,  /* 明るい水色 */
+        #aed6f1,  /* 少し濃い水色 */
+        #d2b4de,  /* ほんのり紫がかったラベンダー */
+        #aed6f1,
+        #d6eaf8,
+        #f0f8ff
       );
       background-size: 600% 600%;
-      animation: gradientLoop 10s linear infinite;
+      animation: gradientLoop 12s ease-in-out infinite;
       color: #ffffff;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,7 +31,8 @@
 
     @keyframes gradientLoop {
       0%   { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
+      50%  { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .container {
