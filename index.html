@@ -10,7 +10,12 @@
       margin: 0;
       padding: 0;
       font-family: 'Sawarabi Mincho', serif;
-      background-color: #ffffff;
+      background: linear-gradient(-45deg,
+        #ff9a9e, #fad0c4, #fbc2eb, #a18cd1,
+        #fbc2eb, #fad0c4, #ff9a9e
+      );
+      background-size: 600% 600%;
+      animation: gradientLoop 10s linear infinite;
       color: #222;
       display: flex;
       justify-content: center;
@@ -18,10 +23,18 @@
       min-height: 100vh;
     }
 
+    @keyframes gradientLoop {
+      0%   { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
     .container {
       max-width: 800px;
       padding: 2em;
-      text-align: left; /* ← 左揃え */
+      background-color: rgba(255, 255, 255, 0.85); /* 背景と分離して読みやすく */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: left; /* 左揃え */
     }
 
     p {
@@ -43,7 +56,6 @@
       愛知県知多郡東浦町森岡下今池35-9<br>
       伊東 亮太 / Ito Ryota<br>
       基本的に何でもやります、気軽るにご相談ください。
-
     </p>
   </div>
 </body>
